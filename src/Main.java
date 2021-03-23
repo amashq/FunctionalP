@@ -11,7 +11,7 @@ public class Main {
         int size = 10;
 
         // число = сумма индекса и модификатора
-        int[] result1 = getFilledArray(size, input, (i, m) -> i + m);
+        int[] result1 = getFilledArray(size, input, Integer::sum);
         System.out.println(Arrays.toString(result1));
 
         // число = произведение индекса и модификатора
